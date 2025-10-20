@@ -1,5 +1,5 @@
 import telebot
-bot = telebot.TeleBot('8436786454:AAFZPl-QJDAi6yfh6oIF-qBg56uuxg3Arj8')
+bot = telebot.TeleBot('Тут будет айпишка')
 from telebot import types
 
 @bot.message_handler(commands=['start'])
@@ -22,4 +22,5 @@ def get_text_messages(message):
     elif message.text == 'Правила пользования':
         bot.send_message(message.from_user.id, 'Правил пока нет', parse_mode='Markdown')
         
+
 
