@@ -22,7 +22,7 @@ def get_text_messages(message):
     elif message.text == 'Помощь':
         bot.send_message(message.from_user.id, 'Здесь будет пара кнопок перехода в инфо канал', parse_mode='Markdown')
     elif message.text == 'Правила пользования':
-        bot.send_message(message.from_user.id, 'Подробно вы можете ознакомиться с правилами ' + '[тут](https://www.youtube.com/watch?v=dQw4w9WgXcQ)', parse_mode='Markdown')
+        bot.send_message(message.from_user.id, 'Подробно вы можете ознакомиться с правилами ' + '[тут](https://telegra.ph/Pravila-polzovaniya-bota-11-11)', parse_mode='Markdown')
     #вторая кнопка, даём персонажу имя
     if message.text == 'Начать приключение':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True) #создание новых кнопок
@@ -50,6 +50,7 @@ def get_text_messages(message):
         btn1 = types.KeyboardButton('Начнем игру')
 
 bot.polling(none_stop=True, interval=0) #обязательная для работы бота часть
+
 
 
 
