@@ -5,7 +5,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 
 #Пока что все команды вписаны и почти никак друг с другом не работают, лишь сосуществуют в одном файле
 
-bot = telebot.TeleBot('8436786454:AAFZPl-QJDAi6yfh6oIF-qBg56uuxg3Arj8')
+bot = telebot.TeleBot('...')
 from telebot import types
 
 def init_db():
