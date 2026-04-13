@@ -1,0 +1,4 @@
+pip install streamlit - для установки стримлита
+pip install streamlit-autorefresh - установка дополнения для стимлита
+python -m streamlit run main.py - первый запуск. После него нужно будет ввести почту и всё запуститься
+
