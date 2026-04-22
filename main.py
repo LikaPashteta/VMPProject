@@ -213,8 +213,8 @@ def try_add_action(char: Character):
 def create_character_screen(existing_names: List[str] = None):
     col_hero_img, col_hero_txt = st.columns([0.30, 0.9])
     with col_hero_img:
-        if os.path.exists("cat-headphones.png"):
-            st.image("cat-headphones.png", width=110)
+        if os.path.exists("img/cat-headphones.png"):
+            st.image("img/cat-headphones.png", width=110)
         else:
             st.write("🎮")
     with col_hero_txt:
@@ -285,8 +285,8 @@ def create_character_screen(existing_names: List[str] = None):
 def character_selection_screen():
     col_hero_img, col_hero_txt = st.columns([0.30, 0.9])
     with col_hero_img:
-        if os.path.exists("cat-headphones.png"):
-            st.image("cat-headphones.png", width=110)
+        if os.path.exists("img/cat-headphones.png"):
+            st.image("img/cat-headphones.png", width=110)
         else:
             st.write("🎮")
     with col_hero_txt:
@@ -316,8 +316,8 @@ def character_selection_screen():
     st.markdown("---")
     col_pers_img, col_pers_txt = st.columns([0.30, 0.9])
     with col_pers_img:
-        if os.path.exists("pers.png"):
-            st.image("pers.png", width=110)
+        if os.path.exists("img/pers.png"):
+            st.image("img/pers.png", width=110)
         else:
             st.write("🎮")
     with col_pers_txt:
@@ -340,8 +340,8 @@ def main_game():
     with st.sidebar:
         col_name_img, col_name_txt = st.columns([0.40, 0.7])
         with col_name_img:
-            if os.path.exists("name.png"):
-                st.image("name.png", width=90)
+            if os.path.exists("img/name.png"):
+                st.image("img/name.png", width=90)
             else:
                 st.write("😎")
         with col_name_txt:
@@ -352,16 +352,16 @@ def main_game():
         energy_progress = max(0.0, min(1.0, char.energy / char.max_energy if char.max_energy > 0 else 0.0))
         col_hp_img, col_hp_bar = st.columns([0.17, 0.90])
         with col_hp_img:
-            if os.path.exists("hp.png"):
-                st.image("hp.png", width=50)
+            if os.path.exists("img/hp.png"):
+                st.image("img/hp.png", width=50)
             else:
                 st.write("❤️")
         with col_hp_bar:
             st.progress(hp_progress, f"Здоровье: {char.hp}/{char.max_hp}")
         col_en_img, col_en_bar = st.columns([0.17, 0.90])
         with col_en_img:
-            if os.path.exists("energy.png"):
-                st.image("energy.png", width=50)
+            if os.path.exists("img/energy.png"):
+                st.image("img/energy.png", width=50)
             else:
                 st.write("⚡")
         with col_en_bar:
@@ -369,8 +369,8 @@ def main_game():
         st.caption(f"📍 Местоположение: {char.location}")
         col_img1, col_txt1 = st.columns([0.3, 0.7])
         with col_img1:
-            if os.path.exists("backstory.png"):
-                st.image("backstory.png", width=70)
+            if os.path.exists("img/backstory.png"):
+                st.image("img/backstory.png", width=70)
             else:
                 st.write("📜")
         with col_txt1:
@@ -379,8 +379,8 @@ def main_game():
             st.write(char.backstory)
         col_img2, col_txt2 = st.columns([0.3, 0.7])
         with col_img2:
-            if os.path.exists("inventory.png"):
-                st.image("inventory.png", width=70)
+            if os.path.exists("img/inventory.png"):
+                st.image("img/inventory.png", width=70)
             else:
                 st.write("🎒")
         with col_txt2:
@@ -394,8 +394,8 @@ def main_game():
         st.subheader("Действия")
         col_act_img, col_act_text = st.columns([0.35, 0.90])
         with col_act_img:
-            if os.path.exists("mode.png"):
-                st.image("mode.png", width=80)
+            if os.path.exists("img/mode.png"):
+                st.image("img/mode.png", width=80)
             else:
                 st.write("⏱️")
         with col_act_text:
@@ -413,8 +413,8 @@ def main_game():
         st.subheader("Судьба героя")
         col_evil_img, col_evil_txt = st.columns([0.2, 0.8])
         with col_evil_img:
-            if os.path.exists("evil.png"):
-                st.image("evil.png", width=60)
+            if os.path.exists("img/evil.png"):
+                st.image("img/evil.png", width=60)
             else:
                 st.write("👹")
         with col_evil_txt:
@@ -434,8 +434,8 @@ def main_game():
                 st.rerun()
         col_good_img, col_good_txt = st.columns([0.2, 0.8])
         with col_good_img:
-            if os.path.exists("good.png"):
-                st.image("good.png", width=60)
+            if os.path.exists("img/good.png"):
+                st.image("img/good.png", width=60)
             else:
                 st.write("😇")
         with col_good_txt:
@@ -458,8 +458,8 @@ def main_game():
         st.subheader("Божественное вмешательство")
         col_heal_img, col_heal_txt = st.columns([0.2, 0.8])
         with col_heal_img:
-            if os.path.exists("heal.png"):
-                st.image("heal.png", width=60)
+            if os.path.exists("img/heal.png"):
+                st.image("img/heal.png", width=60)
             else:
                 st.write("💖")
         with col_heal_txt:
@@ -476,8 +476,8 @@ def main_game():
         st.markdown("---")
         col_switch_img, col_switch_btn = st.columns([0.17, 0.70])
         with col_switch_img:
-            if os.path.exists("change.png"):
-             st.image("change.png", width=50)
+            if os.path.exists("img/change.png"):
+             st.image("img/change.png", width=50)
             else:
                 st.write("🔄")
         with col_switch_btn:
@@ -487,8 +487,8 @@ def main_game():
                 st.rerun()
     col_img_act, col_txt_act = st.columns([0.17, 0.8])
     with col_img_act:
-        if os.path.exists("cat-headphones.png"):
-            st.image("cat-headphones.png", width=80)
+        if os.path.exists("img/cat-headphones.png"):
+            st.image("img/cat-headphones.png", width=80)
         else:
             st.write("📢")
     with col_txt_act:
@@ -503,7 +503,7 @@ def main_game():
     if char.energy < 10:
         st.warning("⚠️ У вас мало энергии. Герой останавливается, пока не воссстановится.")
 def main():
-    st.set_page_config(page_title="Интересности тут", page_icon="icon.png")
+    st.set_page_config(page_title="Интересности тут", page_icon="img/icon.png")
     st_autorefresh(interval=10000, key="autorefresh")
     if "character_created" not in st.session_state:
         st.session_state.character_created = False
